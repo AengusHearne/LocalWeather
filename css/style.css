@@ -1,0 +1,35 @@
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.top {
+  margin-bottom: 130px;
+}
+.navbar {
+  margin-bottom:70px;
+}
+.weather {
+  opacity: 0.7;
+  background-color: #CDEDF6;
+
+ /*  background-color: rgba(255, 255, 255, 0.3); */
+}
+#weatherNow {
+  min-width:180px;
+}
+.story {
+  margin:20px;
+  padding:20px;
+  width:180px;
+}
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
