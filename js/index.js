@@ -127,23 +127,23 @@ $(document).ready(function() {
     // display temp and weather details
     function display() {
       if (weatherMain == 'Thunderstorm') {
-        $('#bground').css('background-image', 'url("' + "https://pixabay.com/static/uploads/photo/2015/05/15/14/59/lightning-bolt-768801_960_720.jpg" + '")');
+        $('#bground').css('background-image', 'url("' + "./img/thunderstorm.jpg" + '")');
       } else if (weatherMain == 'Drizzle') {
-        $('#bground').css('background-image', 'url("' + "https://pixabay.com/static/uploads/photo/2015/06/23/20/30/cobblestones-819087_960_720.jpg" + '")');
+        $('#bground').css('background-image', 'url("' + "./img/drizzle.jpg" + '")');
       } else if (weatherMain == 'Rain') {
-        $('#bground').css('background-image', 'url("' + "https://pixabay.com/static/uploads/photo/2015/07/27/19/48/rain-863339_960_720.jpg" + '")');
+        $('#bground').css('background-image', 'url("' + "./img/rain.jpg" + '")');
       } else if (weatherMain == 'Snow') {
-        $('#bground').css('background-image', 'url("' + "https://pixabay.com/static/uploads/photo/2013/12/28/13/23/winter-234721_960_720.jpg" + '")');
+        $('#bground').css('background-image', 'url("' + "./img/snow.jpg" + '")');
       } else if (weatherMain == 'Atmosphere') {
-        $('#bground').css('background-image', 'url("' + "https://pixabay.com/static/uploads/photo/2016/01/19/17/19/foggy-1149637_960_720.jpg" + '")');
+        $('#bground').css('background-image', 'url("' + "./img/atmosphere.jpg" + '")');
       } else if (weatherMain == 'Clear') {
-        $('#bground').css('background-image', 'url("' + "https://pixabay.com/static/uploads/photo/2014/10/07/13/48/mt-fuji-477832_960_720.jpg" + '")');
+        $('#bground').css('background-image', 'url("' + "./img/clear.jpg" + '")');
       } else if (weatherMain == 'Clouds') {
-        $('#bground').css('background-image', 'url("' + "https://pixabay.com/static/uploads/photo/2015/03/26/09/47/sky-690293_960_720.jpg" + '")');
+        $('#bground').css('background-image', 'url("' + "./img/clouds.jpg" + '")');
       } else if (weatherMain == 'Extreme') {
-        $('#bground').css('background-image', 'url("' + "https://pixabay.com/static/uploads/photo/2015/05/15/14/36/beach-768587_960_720.jpg" + '")');
+        $('#bground').css('background-image', 'url("' + "./img/extreme.jpg" + '")');
       } else if (weatherMain == 'Additional') {
-        $('#bground').css('background-image', 'url("' + "https://pixabay.com/static/uploads/photo/2015/04/07/15/04/weather-vane-711082_960_720.jpg" + '")');
+        $('#bground').css('background-image', 'url("' + "./img/additional.jpg" + '")');
       }
       // info box
       $("#weatherNow").html("<p>I think you're near " + location + ".<p> Looks like " + weather + ", it's <span id='temp'>" + temp + "</span>, wind speed is <span id='speed'>" + windSpeed + "</span> and wind direction is " + windDir + ".<p> <img src=http://openweathermap.org/img/w/" + icon + ".png> </img> <button id='imp'>&deg;F</button> <p><small>Last weather update was at: " + time + " UTC</small>");
