@@ -38,17 +38,16 @@ $(document).ready(function() {
       $("#weatherNow").html("<div class=\"alert alert-info\" role=\"alert\">Sorry, this browser doesn't support geolocation.</div>");
     };
 
-    // ***ADD OPENWEATHER API KEY***
     // dial weather API with loc
     function getWeather() {
-      $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&units=metric&appid=APIKEY-HERE", function(json) {
+      $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&units=metric&appid=" + key, function(json) {
         parse(json);
         getForecast();
       });
     };
 
       function getForecast() {
-            $.getJSON("http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + long + "&units=metric&appid=APIKEY-HERE", function(foreC) {
+            $.getJSON("http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + long + "&units=metric&appid=" + key, function(foreC) {
        parseForecast(foreC);
       });
     };
