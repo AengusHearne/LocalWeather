@@ -3,6 +3,14 @@ $(document).ready(function() {
     var lat;
     var long;
 
+// getCurrentPostion deprecated on insecure origins - temporary switch to Google Maps API
+  $.post( "https://www.googleapis.com/geolocation/v1/geolocate?key=" + gkey, function(json) {
+    lat = json.location.lat;
+    long = json.location.lng;
+    getWeather();
+  })
+
+/*
     // request location from browser
     if (navigator.geolocation) {
       var options = {
@@ -37,6 +45,7 @@ $(document).ready(function() {
     } else {
       $("#weatherNow").html("<div class=\"alert alert-info\" role=\"alert\">Sorry, this browser doesn't support geolocation.</div>");
     };
+    */
 
     // dial weather API with loc
     function getWeather() {
