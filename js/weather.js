@@ -49,14 +49,14 @@ $(document).ready(function() {
 
     // dial weather API with loc
     function getWeather() {
-      $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&units=metric&appid=" + key, function(json) {
+      $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&units=metric&appid=" + wkey, function(json) {
         parse(json);
         getForecast();
       });
     };
 
       function getForecast() {
-            $.getJSON("http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + long + "&units=metric&appid=" + key, function(foreC) {
+            $.getJSON("http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + long + "&units=metric&appid=" + wkey, function(foreC) {
        parseForecast(foreC);
       });
     };

@@ -1,2 +1,3 @@
 // Define API key here
-var key = "API-KEY-HERE";
+var gkey = "API-KEY-HERE";
+var wkey = "API-KEY-HERE";
